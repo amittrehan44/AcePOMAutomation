@@ -1,17 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="6049" started-at="2020-09-07T22:33:46 PDT" finished-at="2020-09-07T22:33:52 PDT">
+  <suite name="Default suite" duration-ms="12426" started-at="2020-09-13T17:11:43 PDT" finished-at="2020-09-13T17:11:56 PDT">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="6049" started-at="2020-09-07T22:33:46 PDT" finished-at="2020-09-07T22:33:52 PDT">
-      <class name="com.ace.testcases.LoginTest">
-        <test-method status="PASS" signature="testCase1()[pri:0, instance:com.ace.testcases.LoginTest@305fd85d]" name="testCase1" duration-ms="6025" started-at="2020-09-07T22:33:46 PDT" finished-at="2020-09-07T22:33:52 PDT">
+    <test name="Default test" duration-ms="12426" started-at="2020-09-13T17:11:43 PDT" finished-at="2020-09-13T17:11:56 PDT">
+      <class name="com.ace.suite.testcase.manager.UpdatePropertyTest">
+        <test-method status="PASS" signature="init(org.testng.ITestResult)[pri:0, instance:com.ace.suite.testcase.manager.UpdatePropertyTest@36ebc363]" name="init" is-config="true" duration-ms="170" started-at="2020-09-13T17:11:43 PDT" finished-at="2020-09-13T17:11:43 PDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=UpdatePropertyTest.updateProertyTest(java.util.Hashtable)[pri:0, instance:com.ace.suite.testcase.manager.UpdatePropertyTest@36ebc363] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testCase1 -->
-      </class> <!-- com.ace.testcases.LoginTest -->
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="updateProertyTest(java.util.Hashtable)[pri:0, instance:com.ace.suite.testcase.manager.UpdatePropertyTest@36ebc363]" name="updateProertyTest" duration-ms="6633" started-at="2020-09-13T17:11:43 PDT" data-provider="getData" finished-at="2020-09-13T17:11:50 PDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{StreetAddress1=456 ABC St., TenantName=Test, TenantPhone=6048325970, Runmode=Y, TenantEmail=update1@a.com, City=Surrey, PropertyType=Condo, Browser=Chrome, PostalCode=V2T666}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateProertyTest -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.ace.suite.testcase.manager.UpdatePropertyTest@36ebc363]" name="quit" is-config="true" duration-ms="309" started-at="2020-09-13T17:11:50 PDT" finished-at="2020-09-13T17:11:50 PDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method status="PASS" signature="init(org.testng.ITestResult)[pri:0, instance:com.ace.suite.testcase.manager.UpdatePropertyTest@36ebc363]" name="init" is-config="true" duration-ms="1" started-at="2020-09-13T17:11:50 PDT" finished-at="2020-09-13T17:11:50 PDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=UpdatePropertyTest.updateProertyTest(java.util.Hashtable)[pri:0, instance:com.ace.suite.testcase.manager.UpdatePropertyTest@36ebc363] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="updateProertyTest(java.util.Hashtable)[pri:0, instance:com.ace.suite.testcase.manager.UpdatePropertyTest@36ebc363]" name="updateProertyTest" duration-ms="5152" started-at="2020-09-13T17:11:50 PDT" data-provider="getData" finished-at="2020-09-13T17:11:56 PDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{StreetAddress1=789 ABC St., TenantName=UpdateTest, TenantPhone=7787792744, Runmode=Y, TenantEmail=update2a@a.com, City=NewWest, PropertyType=Duplex, Browser=Chrome, PostalCode=V2T999}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateProertyTest -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.ace.suite.testcase.manager.UpdatePropertyTest@36ebc363]" name="quit" is-config="true" duration-ms="97" started-at="2020-09-13T17:11:56 PDT" finished-at="2020-09-13T17:11:56 PDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- com.ace.suite.testcase.manager.UpdatePropertyTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

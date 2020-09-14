@@ -7,19 +7,24 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeDriverService;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
 
+import com.ace.listener.AceEventListener;
 
 
-public class AceDriver implements WebConnector {
-	 WebDriver driver;
+
+public class AceDriver extends AceValidationDriver  {
+
 
 	public void openBrowser(String browser) {
-		//log("Opening Brwsercinside class ZohoDriver > openBrowser: "+browser);
-		//System.setProperty(ChromeDriverService.CHROME_DRIVER_SILENT_OUTPUT_PROPERTY, "true");
+		log("Opening the browser "+browser );
+		System.setProperty(ChromeDriverService.CHROME_DRIVER_SILENT_OUTPUT_PROPERTY, "true");
 		System.setProperty("webdriver.chrome.driver", "/Users/amit/Documents/Selenium/chromedriver");
-		driver = new  ChromeDriver();
-		//driver.register(new ZohoEventListner());
+		driver = new EventFiringWebDriver(new ChromeDriver());
+		
+		
+		driver.register(new AceEventListener());
 		
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		driver.manage().window().maximize();
 		
 		
 	}
@@ -27,6 +32,17 @@ public class AceDriver implements WebConnector {
 	public void navigate(String url) {
 		driver.get(url);
 		
+	}
+	
+	public void quitDriver() {
+		if(driver!=null)
+		   driver.quit();
+		
+	}
+
+	public EventFiringWebDriver getCurrentDriver() {
+		// TODO Auto-generated method stub
+		return driver;
 	}
 
 }

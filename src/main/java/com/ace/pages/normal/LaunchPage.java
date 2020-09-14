@@ -15,7 +15,7 @@ public class LaunchPage extends AceBasePage {
 	}
 	
 	public AcePage goToLoginPage() {
-		//log("Go To Home page from Launch Page");
+		log("Go To Home page from Launch Page");
 		AceTestSession session = getSession();
 		session.getCon().navigate("https://acepropdev.web.app");
 		return new LoginPage();
