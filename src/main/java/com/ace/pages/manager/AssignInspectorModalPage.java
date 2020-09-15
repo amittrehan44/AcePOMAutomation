@@ -7,14 +7,17 @@ import com.ace.base.pages.AceBasePage;
 import com.ace.base.pages.AcePage;
 
 public class AssignInspectorModalPage extends AceBasePage {
-	@FindBy (id="viewPropertyLink")
-	WebElement viewPropertyBtn;
+	@FindBy (id="selectInspector")
+	WebElement selectInspector;
 	
-	@FindBy (id="insoectionRemindersLink")
-	WebElement inspectioReminderLink;
+	@FindBy (id="saveBtn")
+	WebElement saveBtn;
 	
 	public AcePage assignInspector() {
-		//selectFirstOption(viewPropertyBtn);
+		log("Select Inspector from dropdownlist");
+		//selectFirstOption(selectInspector);
+		select(selectInspector,"Amit - 7787792744");
+		saveBtn.click();
 		return new InspectionRemindersPage();
 		
 	}

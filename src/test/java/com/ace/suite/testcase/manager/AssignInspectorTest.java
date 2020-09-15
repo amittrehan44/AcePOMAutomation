@@ -1,5 +1,9 @@
 package com.ace.suite.testcase.manager;
 
+import static org.testng.Assert.fail;
+
+import java.io.PrintWriter;
+import java.io.StringWriter;
 import java.util.Hashtable;
 
 import org.testng.SkipException;
@@ -15,6 +19,8 @@ public class AssignInspectorTest extends TestBase{
 	
 	@Test(dataProviderClass = TestDataProvider.class , dataProvider = "getData")
 	public void asignInspectorTest(Hashtable<String,String> data) {
+		
+		try {
 		session.log(data.toString());
 		if(!new DataUtil().isRunnable(testName, xls) || data.get("Runmode").equals("N")) {
 			// skip in extent rep
@@ -29,10 +35,23 @@ public class AssignInspectorTest extends TestBase{
 	    .gotoHomePage(Constants.DEFAULT_USERNAME, Constants.DEFAULT_PASWD)
 	    .goToInspectionRemindersPage()
 	    .openAssignInsoectorModalPage("ABC St")
-	    .addProperty(data)
-	    .validator(true).isElementPresent(Constants.SAVE_RIBBON_LOCATOR);
+	    .assignInspector()
+	    .validator(true).validateElementPresent(Constants.SAVE_RIBBON_LOCATOR);
+	    
 		
 		session.end();
+		}
+		catch(Exception e) {
+			//Convert exception stacktrace to string and print it in reports
+			 StringWriter sw = new StringWriter();
+	         e.printStackTrace(new PrintWriter(sw));
+	         String exceptionAsString = sw.toString();
+	            
+			session.getCon().fail(exceptionAsString);
+
+			
+			
+		}
 	}
 
 }

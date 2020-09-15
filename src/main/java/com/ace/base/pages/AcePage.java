@@ -12,10 +12,14 @@ public interface AcePage {
 	AcePage openBrowser(String browser);
 	 void quit();
 	 void getTotalWindows();
-	// AceTestSession getSession();
+	 
+	
 	 void wait(int time);
 	 void waitForPageToLoad();
+	 
+	 //common used functions
 	 void select(WebElement e, String textToSelect);
+	 void selectFirstOption(WebElement e);
 	
 	//Ace based normal Functions
 	 AcePage goToLoginPage();

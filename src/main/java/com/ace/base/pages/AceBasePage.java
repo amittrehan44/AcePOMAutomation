@@ -28,7 +28,10 @@ public class AceBasePage implements AcePage {
 		Select s = new Select(e);
 		s.selectByVisibleText(textToSelect);
 	}
-	
+	public void selectFirstOption(WebElement e) {
+		Select s = new Select(e);
+		s.selectByIndex(2);
+	}
 	
 	public AcePage openBrowser(String browser) {
 		// TODO Auto-generated method stub
@@ -107,7 +110,7 @@ public class AceBasePage implements AcePage {
 		// TODO Auto-generated method stub
 		return null;
 	}
-	public  AcePage openAssignInsoectorModalPage(String address) {
+	public  AcePage openAssignInsoectorModalPage(String address)  {
 		// TODO Auto-generated method stub
 		return null;
 	}

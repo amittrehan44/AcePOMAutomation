@@ -17,7 +17,7 @@ import com.ace.session.AceTestSession;
 
 public abstract class AceValidationDriver implements WebConnector {
 	EventFiringWebDriver driver;
-	boolean stopExecution;
+	boolean stopExecution=true;
 	SoftAssert softAssert = new SoftAssert();
 	
 	public SoftAssert getSoftAssert() {

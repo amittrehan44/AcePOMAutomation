@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.ace.suite.testcase.manager.UpdatePropertyTest">
+      <class name="com.ace.suite.testcase.manager.AssignInspectorTest">
         <methods>
-          <include name="updateProertyTest" invocation-numbers="1"/>
           <include name="quit"/>
           <include name="init"/>
+          <include name="asignInspectorTest" invocation-numbers="0"/>
         </methods>
-      </class> <!-- com.ace.suite.testcase.manager.UpdatePropertyTest -->
+      </class> <!-- com.ace.suite.testcase.manager.AssignInspectorTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
