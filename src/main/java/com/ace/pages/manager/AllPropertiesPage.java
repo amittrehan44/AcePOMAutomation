@@ -19,6 +19,9 @@ public class AllPropertiesPage extends AceBasePage {
 	@FindBy (id="insoectionRemindersLink")
 	WebElement inspectioReminderLink;
 	
+	@FindBy (id="ongoingInsoectionsLink")
+	WebElement ongoingInspectionLink;
+	
 	public AcePage goToAddPropertyPage() {
 		log("Click Add Property Button");
 		addPropertyBtn.click();
@@ -40,6 +43,12 @@ public class AllPropertiesPage extends AceBasePage {
 		log("Click Inspection Reminders Link");
 		inspectioReminderLink.click();
 		return new InspectionRemindersPage();
+	}
+	
+	public AcePage goToOngoingInspectionPage() {
+		log("Click Ongoing Inspection Link");
+		ongoingInspectionLink.click();
+		return new OngoingInspectionsPage();
 	}
 
 

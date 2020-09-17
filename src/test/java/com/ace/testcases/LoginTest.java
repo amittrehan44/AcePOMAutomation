@@ -1,5 +1,7 @@
 package com.ace.testcases;
 
+import org.testng.annotations.Test;
+import org.testng.Assert;
 import java.util.Hashtable;
 
 import org.testng.SkipException;
@@ -44,13 +46,13 @@ public class LoginTest extends TestBase{
 		
 		 if(!allPropLink & userNameValid.equals("Y")) {
 		    	// failure
-		    	page.validator(true).fail("Cannot Login "+ userNameValid);
+		    	Assert.fail("Cannot Login "+ userNameValid);
 		    }
 		 else if(allPropLink ) {
 		    	if(userNameValid.equals("N")) {
 		    	// failure
 		    		
-		    			page.validator(true).fail("Able to enter and submit with invalid username as userNameValid field is  "+ userNameValid);
+		    			Assert.fail("Able to enter and submit with invalid username as userNameValid field is  "+ userNameValid);
 		    	}else {
 		    		//proceed with password entry and login
 		    		page.validator(false).validateText(Constants.ALLPROPTAB_LINK_LOCATOR, "All Properties");

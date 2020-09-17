@@ -41,7 +41,7 @@ public class AddUpdatePropertyPage extends AceBasePage {
 	WebElement saveRibbon;
 	
 	
-	public AcePage updatePropertyTest(Hashtable<String,String> data) {
+	public AcePage addProperty(Hashtable<String,String> data) {
 		tenantName.sendKeys(data.get("TenantName"));
 		tenantPhone.sendKeys(data.get("TenantPhone"));
 		tenantEmail.sendKeys(data.get("TenantEmail"));

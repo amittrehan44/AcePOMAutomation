@@ -31,15 +31,18 @@ public interface AcePage {
 	 AcePage goToViewProperty(String address);
 	 AcePage goToEditProperty();
 	 AcePage goToInspectionRemindersPage();
+	 AcePage goToOngoingInspectionPage();
 	 AcePage addProperty(Hashtable<String,String> data);
 	 AcePage editProperty(Hashtable<String,String> data);
 	 AcePage bookInspection();
 	 AcePage editInspector();
 	 AcePage assignInspector();
 	 AcePage openAssignInsoectorModalPage(String address);
-	 AcePage goToViewEditInspection();
-	 AcePage editInspection();
-	 AcePage approveInspection();
+	 AcePage goToViewEditInspection(String address);
+	 AcePage editInspection(Hashtable<String,String> data);
+	 AcePage attachReport(Hashtable<String,String> data);
+	 AcePage approveInspection(Hashtable<String,String> data);
+	 AcePage clickEditInspoection();
 	 
 	
 	 void logout();

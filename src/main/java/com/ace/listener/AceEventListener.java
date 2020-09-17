@@ -3,6 +3,7 @@ package com.ace.listener;
 import java.time.Duration;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -34,17 +35,17 @@ public class AceEventListener extends AbstractWebDriverEventListener {
 		}
 		catch(TimeoutException e) {
 			getDriver().fail("Element not foundd:- "+locator);
-			System.out.println("Element not foundd:- "+locator);
+			System.out.println("Element not foundd:- "+locator+"with Error: "+e);
 			getDriver().assertAll();
 		}
 		catch(NoClassDefFoundError e) {
 			getDriver().fail("Element not foundd:- "+locator);
-			System.out.println("Element not foundd:- "+locator);
+			System.out.println("Element not foundd:- "+locator+"with Error: "+e);
 			getDriver().assertAll();
 			
 		}
 		catch(Exception e) {
-			System.out.println("Element not foundd:- "+locator+"with Error: "+e);
+			System.out.println("Element not foundd and cannot caugh with any specific exception:- "+locator+"with Error: "+e);
 			getDriver().fail("Issue with element "+locator+ "  "+e);
 			getDriver().assertAll();
 		}

@@ -49,7 +49,12 @@ public class AceBasePage implements AcePage {
 	}
 
 	public void wait(int time) {
-		// TODO Auto-generated method stub
+		try {
+			Thread.sleep(time*1000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		
 	}
 
@@ -114,15 +119,15 @@ public class AceBasePage implements AcePage {
 		// TODO Auto-generated method stub
 		return null;
 	}
-	public AcePage goToViewEditInspection() {
+	public AcePage goToViewEditInspection(String address) {
 		// TODO Auto-generated method stub
 		return null;
 	}
-	public AcePage editInspection() {
+	public AcePage editInspection(Hashtable<String,String> data){
 		// TODO Auto-generated method stub
 		return null;
 	}
-	public AcePage approveInspection() {
+	public AcePage approveInspection(Hashtable<String,String> data) {
 		// TODO Auto-generated method stub
 		return null;
 	}
@@ -135,6 +140,18 @@ public class AceBasePage implements AcePage {
 		return null;
 	}
 	public AcePage goToInspectionRemindersPage() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	public AcePage goToOngoingInspectionPage() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	public AcePage clickEditInspoection() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	public AcePage attachReport(Hashtable<String, String> data) {
 		// TODO Auto-generated method stub
 		return null;
 	}

@@ -17,8 +17,8 @@ public class Constants {
 	public static final String SAVE_RIBBON="//div[@id='toast-container']/div";
 	public static final By SAVE_RIBBON_LOCATOR=By.xpath(SAVE_RIBBON);
 	
-	public static final String LOGIN_LINK="a.zh-login";
-	public static final By LOGIN_LINK_LOCATOR=By.cssSelector(LOGIN_LINK);
+	public static final String APPROVE_INSPECTION_MESSAGE_XPATH="//div[@class='modal-body']/p";
+	public static final By APPROVE_INSPECTION_MESSAGE_LOCATOR=By.xpath(APPROVE_INSPECTION_MESSAGE_XPATH);
 	
 	public static final String LOGIN_ID = "login_id";
 	public static final By LOGIN_ID_LOCATOR=By.id(LOGIN_ID);

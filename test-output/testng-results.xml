@@ -1,24 +1,188 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="9" passed="9">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="6049" started-at="2020-09-14T21:55:57 PDT" finished-at="2020-09-14T21:56:03 PDT">
+  <suite name="Suite" duration-ms="90127" started-at="2020-09-17T15:43:05 PDT" finished-at="2020-09-17T15:44:35 PDT">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="6049" started-at="2020-09-14T21:55:57 PDT" finished-at="2020-09-14T21:56:03 PDT">
-      <class name="com.ace.suite.testcase.manager.AssignInspectorTest">
-        <test-method status="PASS" signature="init(org.testng.ITestResult)[pri:0, instance:com.ace.suite.testcase.manager.AssignInspectorTest@36ebc363]" name="init" is-config="true" duration-ms="163" started-at="2020-09-14T21:55:57 PDT" finished-at="2020-09-14T21:55:57 PDT">
+    <test name="Test" duration-ms="90127" started-at="2020-09-17T15:43:05 PDT" finished-at="2020-09-17T15:44:35 PDT">
+      <class name="com.ace.suite.testcase.manager.AttachReportTest">
+        <test-method status="PASS" signature="init(org.testng.ITestResult)[pri:0, instance:com.ace.suite.testcase.manager.AttachReportTest@291caca8]" name="init" is-config="true" duration-ms="1" started-at="2020-09-17T15:44:02 PDT" finished-at="2020-09-17T15:44:02 PDT">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=AssignInspectorTest.asignInspectorTest(java.util.Hashtable)[pri:0, instance:com.ace.suite.testcase.manager.AssignInspectorTest@36ebc363] output={null}]]]>
+                <![CDATA[[TestResult name={null} status=CREATED method=AttachReportTest.attachReportTest(java.util.Hashtable)[pri:0, instance:com.ace.suite.testcase.manager.AttachReportTest@291caca8] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="asignInspectorTest(java.util.Hashtable)[pri:0, instance:com.ace.suite.testcase.manager.AssignInspectorTest@36ebc363]" name="asignInspectorTest" duration-ms="5511" started-at="2020-09-14T21:55:57 PDT" data-provider="getData" finished-at="2020-09-14T21:56:03 PDT">
+        <test-method status="PASS" signature="attachReportTest(java.util.Hashtable)[pri:0, instance:com.ace.suite.testcase.manager.AttachReportTest@291caca8]" name="attachReportTest" duration-ms="6817" started-at="2020-09-17T15:44:02 PDT" data-provider="getData" finished-at="2020-09-17T15:44:09 PDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{InspectorName=, ManagerNotes=, Runmode=Y, InspectionType=, Browser=Chrome}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- attachReportTest -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.ace.suite.testcase.manager.AttachReportTest@291caca8]" name="quit" is-config="true" duration-ms="95" started-at="2020-09-17T15:44:09 PDT" finished-at="2020-09-17T15:44:09 PDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- com.ace.suite.testcase.manager.AttachReportTest -->
+      <class name="com.ace.suite.testcase.manager.ApproveInspectionTest">
+        <test-method status="PASS" signature="init(org.testng.ITestResult)[pri:0, instance:com.ace.suite.testcase.manager.ApproveInspectionTest@385e9564]" name="init" is-config="true" duration-ms="0" started-at="2020-09-17T15:44:09 PDT" finished-at="2020-09-17T15:44:09 PDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=ApproveInspectionTest.approveInspectionTest(java.util.Hashtable)[pri:0, instance:com.ace.suite.testcase.manager.ApproveInspectionTest@385e9564] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="approveInspectionTest(java.util.Hashtable)[pri:0, instance:com.ace.suite.testcase.manager.ApproveInspectionTest@385e9564]" name="approveInspectionTest" duration-ms="26319" started-at="2020-09-17T15:44:09 PDT" data-provider="getData" finished-at="2020-09-17T15:44:35 PDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{ManagerNotes=This is autmated manager notes, Runmode=Y, InspectionDate=2020-09-16, InspectionType=Regular, Browser=Chrome}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- approveInspectionTest -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.ace.suite.testcase.manager.ApproveInspectionTest@385e9564]" name="quit" is-config="true" duration-ms="94" started-at="2020-09-17T15:44:35 PDT" finished-at="2020-09-17T15:44:35 PDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- com.ace.suite.testcase.manager.ApproveInspectionTest -->
+      <class name="com.ace.suite.testcase.manager.UpdatePropertyTest">
+        <test-method status="PASS" signature="init(org.testng.ITestResult)[pri:0, instance:com.ace.suite.testcase.manager.UpdatePropertyTest@399c4be1]" name="init" is-config="true" duration-ms="1" started-at="2020-09-17T15:43:51 PDT" finished-at="2020-09-17T15:43:51 PDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=UpdatePropertyTest.updateProertyTest(java.util.Hashtable)[pri:0, instance:com.ace.suite.testcase.manager.UpdatePropertyTest@399c4be1] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="updateProertyTest(java.util.Hashtable)[pri:0, instance:com.ace.suite.testcase.manager.UpdatePropertyTest@399c4be1]" name="updateProertyTest" duration-ms="5354" started-at="2020-09-17T15:43:51 PDT" data-provider="getData" finished-at="2020-09-17T15:43:56 PDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{StreetAddress1=456 ABC St., TenantName=Test, TenantPhone=6048325970, Runmode=Y, TenantEmail=update1@a.com, City=Surrey, PropertyType=Condo, Browser=Chrome, PostalCode=V2T666}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateProertyTest -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.ace.suite.testcase.manager.UpdatePropertyTest@399c4be1]" name="quit" is-config="true" duration-ms="97" started-at="2020-09-17T15:43:56 PDT" finished-at="2020-09-17T15:43:56 PDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method status="PASS" signature="init(org.testng.ITestResult)[pri:0, instance:com.ace.suite.testcase.manager.UpdatePropertyTest@399c4be1]" name="init" is-config="true" duration-ms="1" started-at="2020-09-17T15:43:56 PDT" finished-at="2020-09-17T15:43:56 PDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=UpdatePropertyTest.updateProertyTest(java.util.Hashtable)[pri:0, instance:com.ace.suite.testcase.manager.UpdatePropertyTest@399c4be1] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="updateProertyTest(java.util.Hashtable)[pri:0, instance:com.ace.suite.testcase.manager.UpdatePropertyTest@399c4be1]" name="updateProertyTest" duration-ms="5422" started-at="2020-09-17T15:43:56 PDT" data-provider="getData" finished-at="2020-09-17T15:44:02 PDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{StreetAddress1=789 ABC St., TenantName=UpdateTest, TenantPhone=7787792744, Runmode=Y, TenantEmail=update2a@a.com, City=NewWest, PropertyType=Duplex, Browser=Chrome, PostalCode=V2T999}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateProertyTest -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.ace.suite.testcase.manager.UpdatePropertyTest@399c4be1]" name="quit" is-config="true" duration-ms="94" started-at="2020-09-17T15:44:02 PDT" finished-at="2020-09-17T15:44:02 PDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- com.ace.suite.testcase.manager.UpdatePropertyTest -->
+      <class name="com.ace.testcases.LoginTest">
+        <test-method status="PASS" signature="init(org.testng.ITestResult)[pri:0, instance:com.ace.testcases.LoginTest@707194ba]" name="init" is-config="true" duration-ms="175" started-at="2020-09-17T15:43:05 PDT" finished-at="2020-09-17T15:43:05 PDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=LoginTest.loginTest(java.util.Hashtable)[pri:0, instance:com.ace.testcases.LoginTest@707194ba] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="loginTest(java.util.Hashtable)[pri:0, instance:com.ace.testcases.LoginTest@707194ba]" name="loginTest" duration-ms="5361" started-at="2020-09-17T15:43:05 PDT" data-provider="getData" finished-at="2020-09-17T15:43:11 PDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Username=amit.trehan44@outlook.com, Password=Password1234, Runmode=Y, PasswordValid=Y, UsernameValid=Y, Browser=Chrome}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.ace.testcases.LoginTest@707194ba]" name="quit" is-config="true" duration-ms="310" started-at="2020-09-17T15:43:11 PDT" finished-at="2020-09-17T15:43:11 PDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method status="PASS" signature="init(org.testng.ITestResult)[pri:0, instance:com.ace.testcases.LoginTest@707194ba]" name="init" is-config="true" duration-ms="1" started-at="2020-09-17T15:43:11 PDT" finished-at="2020-09-17T15:43:11 PDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=LoginTest.loginTest(java.util.Hashtable)[pri:0, instance:com.ace.testcases.LoginTest@707194ba] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="loginTest(java.util.Hashtable)[pri:0, instance:com.ace.testcases.LoginTest@707194ba]" name="loginTest" duration-ms="23021" started-at="2020-09-17T15:43:11 PDT" data-provider="getData" finished-at="2020-09-17T15:43:34 PDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Username=xxxxxxxx@xxx.com, Password=Whizdom@2020, Runmode=Y, PasswordValid=, UsernameValid=N, Browser=Chrome}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.ace.testcases.LoginTest@707194ba]" name="quit" is-config="true" duration-ms="100" started-at="2020-09-17T15:43:34 PDT" finished-at="2020-09-17T15:43:34 PDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- com.ace.testcases.LoginTest -->
+      <class name="com.ace.suite.testcase.manager.AssignInspectorTest">
+        <test-method status="PASS" signature="init(org.testng.ITestResult)[pri:0, instance:com.ace.suite.testcase.manager.AssignInspectorTest@6a2f6f80]" name="init" is-config="true" duration-ms="1" started-at="2020-09-17T15:43:40 PDT" finished-at="2020-09-17T15:43:40 PDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=AssignInspectorTest.asignInspectorTest(java.util.Hashtable)[pri:0, instance:com.ace.suite.testcase.manager.AssignInspectorTest@6a2f6f80] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="asignInspectorTest(java.util.Hashtable)[pri:0, instance:com.ace.suite.testcase.manager.AssignInspectorTest@6a2f6f80]" name="asignInspectorTest" duration-ms="4849" started-at="2020-09-17T15:43:40 PDT" data-provider="getData" finished-at="2020-09-17T15:43:45 PDT">
           <params>
             <param index="0">
               <value>
@@ -29,11 +193,67 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- asignInspectorTest -->
-        <test-method status="PASS" signature="quit()[pri:0, instance:com.ace.suite.testcase.manager.AssignInspectorTest@36ebc363]" name="quit" is-config="true" duration-ms="312" started-at="2020-09-14T21:56:03 PDT" finished-at="2020-09-14T21:56:03 PDT">
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.ace.suite.testcase.manager.AssignInspectorTest@6a2f6f80]" name="quit" is-config="true" duration-ms="91" started-at="2020-09-17T15:43:45 PDT" finished-at="2020-09-17T15:43:45 PDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quit -->
       </class> <!-- com.ace.suite.testcase.manager.AssignInspectorTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="com.ace.suite.testcase.manager.UpdateInspectionTest">
+        <test-method status="PASS" signature="init(org.testng.ITestResult)[pri:0, instance:com.ace.suite.testcase.manager.UpdateInspectionTest@45b4c3a9]" name="init" is-config="true" duration-ms="1" started-at="2020-09-17T15:43:45 PDT" finished-at="2020-09-17T15:43:45 PDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=UpdateInspectionTest.updateInspectionTest(java.util.Hashtable)[pri:0, instance:com.ace.suite.testcase.manager.UpdateInspectionTest@45b4c3a9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="updateInspectionTest(java.util.Hashtable)[pri:0, instance:com.ace.suite.testcase.manager.UpdateInspectionTest@45b4c3a9]" name="updateInspectionTest" duration-ms="6032" started-at="2020-09-17T15:43:45 PDT" data-provider="getData" finished-at="2020-09-17T15:43:51 PDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{ManagerNotes=This is autmated manager notes, Runmode=Y, InspectionDate=2020-09-16, InspectionType=Regular, Browser=Chrome}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateInspectionTest -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.ace.suite.testcase.manager.UpdateInspectionTest@45b4c3a9]" name="quit" is-config="true" duration-ms="92" started-at="2020-09-17T15:43:51 PDT" finished-at="2020-09-17T15:43:51 PDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- com.ace.suite.testcase.manager.UpdateInspectionTest -->
+      <class name="com.ace.suite.testcase.manager.CreatePropertyTest">
+        <test-method status="PASS" signature="init(org.testng.ITestResult)[pri:0, instance:com.ace.suite.testcase.manager.CreatePropertyTest@1190200a]" name="init" is-config="true" duration-ms="0" started-at="2020-09-17T15:43:34 PDT" finished-at="2020-09-17T15:43:34 PDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=CreatePropertyTest.createProertyTest(java.util.Hashtable)[pri:0, instance:com.ace.suite.testcase.manager.CreatePropertyTest@1190200a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="createProertyTest(java.util.Hashtable)[pri:0, instance:com.ace.suite.testcase.manager.CreatePropertyTest@1190200a]" name="createProertyTest" duration-ms="5584" started-at="2020-09-17T15:43:34 PDT" data-provider="getData" finished-at="2020-09-17T15:43:40 PDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{StreetAddress1=123 ABC St., TenantName=Test, TenantPhone=7787792744, Runmode=Y, TenantEmail=a@a.com, City=Abbotsford, PropertyType=House, Browser=Chrome, PostalCode=V2T2W4}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createProertyTest -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.ace.suite.testcase.manager.CreatePropertyTest@1190200a]" name="quit" is-config="true" duration-ms="94" started-at="2020-09-17T15:43:40 PDT" finished-at="2020-09-17T15:43:40 PDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- com.ace.suite.testcase.manager.CreatePropertyTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
